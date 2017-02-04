@@ -10,6 +10,7 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 # Install hubot
 RUN npm install -g coffee-script hubot
 RUN apt-get clean && npm cache clean
+RUN npm install -g yo generator-hubot
 
 RUN useradd -m hubot
 
